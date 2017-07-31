@@ -1,9 +1,12 @@
 const makeStack = () => {
-  let length = 0;
+  let queue = 0;
+  const isEmpty = () => queue === 0;
+  const push = () => queue++;
+  const size = () => queue;
   return {
-    isEmpty: () => length === 0,
-    push: () => length++,
-    size: () => length
+    isEmpty,
+    push,
+    size
   };
 };
 
@@ -20,7 +23,7 @@ describe.only('the stack spec', () => {
     stack.size().should.equal(0);
   });
   it('is not empty when pushed', () => {
-    stack.push(4);
+    stack.push();
     stack.isEmpty().should.be.false();
   });
   it('leaves stack size 1 when pushed', () => {
