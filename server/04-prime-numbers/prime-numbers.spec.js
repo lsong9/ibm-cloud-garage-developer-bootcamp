@@ -9,7 +9,7 @@ function primeFactorsOf(number) {
   return factors;
 }
 
-describe.only('prime factors', () => {
+describe('prime factors', () => {
   it('return none for 1', () => {
     primeFactorsOf(1).should.deepEqual([]);
   });
