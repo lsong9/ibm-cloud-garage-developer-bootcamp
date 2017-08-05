@@ -1,5 +1,5 @@
 describe('the canary spec', () => {
-  it.only('shows the infrastructure works', () => {
-    true.should.be.true('custom message');
+  it('shows the infrastructure works', () => {
+    true.should.be.true();
   });
 });
