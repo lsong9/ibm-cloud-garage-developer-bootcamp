@@ -26,7 +26,7 @@ const makeStack = () => {
 
 let stack;
 
-describe.only('the stack', () => {
+describe('the stack', () => {
   beforeEach(() => {
     stack = makeStack();
   });
